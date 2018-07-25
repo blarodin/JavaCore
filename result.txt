@@ -1,0 +1,4 @@
+Total price for 6 month: 1336.80 (222.80 per month)
+Your total extra pay: 136.80 (22.80 per month)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Input amount of money: 
