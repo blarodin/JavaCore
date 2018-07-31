@@ -1,4 +1,4 @@
-package ua.com.codefire._06_classes;
+package ua.com.codefire._05_classes;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

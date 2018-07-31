@@ -22,7 +22,8 @@ public class CreditCalculatorAdv {
     /**
      * Keyboard stream-reader for User's input data
      */
-    private static final BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+    private static final InputStreamReader streamReader = new InputStreamReader(System.in);
+    private static final BufferedReader keyboard = new BufferedReader(streamReader);
 
     /**
      * Main method (aka 'Entry point of App')
