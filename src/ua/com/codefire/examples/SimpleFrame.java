@@ -2,6 +2,8 @@ package ua.com.codefire.examples;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class SimpleFrame extends JFrame {
 
@@ -14,6 +16,18 @@ public class SimpleFrame extends JFrame {
 
         JButton button = new JButton();
         button.setText("Click me!");
+        /*
+        // 'Contract' for Button's Action
+        ActionHandler handler = new ActionHandler();
+        button.addActionListener(handler);
+        */
+
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                System.out.println("Action for Button!");
+            }
+        });
 
         this.getContentPane().add(button);
 
@@ -28,5 +42,16 @@ public class SimpleFrame extends JFrame {
     public static void main(String[] args) {
         SimpleFrame frame = new SimpleFrame();
         frame.setVisible(true);
+    }
+}
+
+class ActionHandler implements ActionListener {
+
+    @Override
+    public void actionPerformed(ActionEvent actionEvent) {
+        // print to Console
+        System.out.println("Action for Button!");
+        // Show message :)
+        JOptionPane.showMessageDialog(null, "Hello Swing Framework!", "My Title",JOptionPane.INFORMATION_MESSAGE);
     }
 }
