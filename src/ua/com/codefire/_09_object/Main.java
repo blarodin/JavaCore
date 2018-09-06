@@ -67,5 +67,10 @@ public class Main {
         Method method = metaClass.getDeclaredMethod("getName");
         String value = method.invoke(first).toString();
         System.out.println(value);
+
+        Person person = new Person();
+        person.setName("Ivan");
+        person.setAge(21);
+        System.out.println(person);
     }
 }
